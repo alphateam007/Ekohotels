@@ -1,7 +1,7 @@
 from django.db import models
 from django.db.models.deletion import CASCADE
 
-class Users(models.Model):
+class User(models.Model):
     id=models.UUIDField(primary_key=True)
     username= models.CharField(max_length=15)
     email = models.EmailField(max_length=254)
@@ -33,8 +33,15 @@ class Receptionist(models.Model):
     
     def __str__(self):
         return self.first_name,self.last_name
-    
 
-    
+class Booking(models.Model):
+    id = models.UUIDField(primary_key=True)
+    room_id = models.ForeignKey(Room, on_delete=models.CASCADE)
+    customer_id = models.ForeignKey(User, on_delete=models.CASCADE)
+    staff_id = models.ForeignKey(User, on_delete=models.CASCADE)
+    payment_id = models.ForeignKey(Payment, on_delete=models.CASCADE)
+    created_at = models.DateTimeField('date created')
+    updated_at = models.DateTimeField('date updated')
 
-        
+    def __str__(self):
+        return self.id
