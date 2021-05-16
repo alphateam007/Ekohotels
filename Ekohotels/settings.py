@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'ekohms'
 ]
 
 MIDDLEWARE = [
@@ -83,7 +84,7 @@ DATABASES = {
         'USER': 'postgres',
         'PORT': '5432',
         'NAME': 'Ekohotels',
-        'PASSWORD': '050895'
+        'PASSWORD': 'postgres123'
     }
 }
 
