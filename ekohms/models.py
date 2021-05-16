@@ -34,3 +34,6 @@ class Booking(models.Model):
     payment_id = models.ForeignKey(Payment, on_delete=models.CASCADE)
     created_at = models.DateTimeField('date created')
     updated_at = models.DateTimeField('date updated')
+
+    def __str__(self):
+        return self.id
