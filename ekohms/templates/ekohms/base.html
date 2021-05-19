@@ -97,10 +97,12 @@
               <div class="form-group row w-100 mx-auto">
                 <label class="col-form-label">Room</label>
                 <select class="form-control">
-                  <option>Luxury Suite</option>
-                  <option>Signature Room</option>
+                  {%for room in rooms%}
+                  <option>{{room.room_type}}</option>
+                  <!-- <option>Signature Room</option>
                   <option>Classic Room</option>
-                  <option>Deluxe Room</option>
+                  <option>Deluxe Room</option> -->
+                  {% endfor %}
                 </select>
               </div><!-- form-group -->
 

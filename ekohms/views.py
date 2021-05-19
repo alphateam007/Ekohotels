@@ -29,4 +29,4 @@ def about(request):
 
 def rooms_detailed_view(request, room_id):
     room_detail = get_object_or_404(RoomType, pk=room_id)
-    return render(request, 'ekohms/rooms_views.html', {'room': room_detail})
+    return render(request, 'ekohms/rooms_views.html',{'room': room_detail,'rooms': room_types})
