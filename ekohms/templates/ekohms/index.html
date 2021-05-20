@@ -97,7 +97,7 @@
             <h3 class="card-title py-2">{{room.room_type}}</h3>
             <p class="card-text">{{room.room_description}}</p>
             <div>
-              <a href="{% url 'rooms' %}" class="btn btn-primary text-uppercase pb-2 active" role="button"
+              <a href="{% url 'rooms_detailed_view' room.id %}" class="btn btn-primary text-uppercase pb-2 active" role="button"
                 aria-pressed="true">Read
                 more</a>
             </div>

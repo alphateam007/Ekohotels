@@ -17,12 +17,12 @@
 
   <nav class="navbar bg-dark navbar-dark navbar-expand-md fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="index.html">Eko Hotels</a>
+      <a class="navbar-brand" href="#">Eko Hotels</a>
 
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myTogglerNav"
+      <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myTogglerNav"
         aria-controls="myTogglerNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
-      </button>
+      </button> -->
 
       <div class="collapse navbar-collapse" id="myTogglerNav">
         <div class="navbar-nav ml-auto pt-1">
@@ -32,9 +32,9 @@
           <a class="nav-item nav-link" href="{% url 'contact' %}">Contact</a>
           <a class="nav-item nav-link" href="{% url 'login' %}">Login</a>
           <div class="mb-1">
-            <button type="button" class="btn btn-primary pb-2 text-uppercase" data-toggle="modal"
+            <!-- <button type="button" class="btn btn-primary pb-2 text-uppercase" data-toggle="modal"
               data-target="#servicesmodal">Book
-              Now</button>
+              Now</button> -->
           </div>
         </div> <!-- navbar-nav -->
       </div> <!-- collapse -->
@@ -44,83 +44,7 @@
   <!-- End of Navigation -->
   {% block content %}
   {% endblock content %}
-  <!-- Book Now Modal -->
-
-  <div class="modal fade" id="servicesmodal">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-body">
-
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-
-          <h2 class="modal-title text-center pb-4">Book Now</h2>
-
-          <form>
-
-            <fieldset class="form-group">
-
-              <div class="form-group form-row">
-                <div class="form-group col">
-                  <label class="col-form-label" for="check-in">Check In</label>
-                  <input class="form-control" type="date" id="check-in" value="2019-08-19">
-                </div><!-- form-group -->
-
-                <div class="form-group col">
-                  <label class="col-form-label" for="check-out">Check Out</label>
-                  <input class="form-control" type="date" id="check-out" value="2019-08-20">
-                </div><!-- form-group -->
-              </div><!-- form-group -->
-
-              <div class="form-group form-row">
-                <div class="form-group col">
-                  <label class="col-form-label">Adults</label>
-                  <select class="form-control">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                  </select>
-                </div><!-- form-group -->
-
-                <div class="form-group col">
-                  <label class="col-form-label">Children</label>
-                  <select class="form-control">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                  </select>
-                </div><!-- form-group -->
-              </div><!-- form-group -->
-
-              <div class="form-group row w-100 mx-auto">
-                <label class="col-form-label">Room</label>
-                <select class="form-control">
-                  <option>Luxury Suite</option>
-                  <option>Signature Room</option>
-                  <option>Classic Room</option>
-                  <option>Deluxe Room</option>
-                </select>
-              </div><!-- form-group -->
-
-              <div class="form-group row pt-5">
-                <div class="col-auto">
-                  <button class="btn btn-primary" type="submit">Submit</button>
-                </div>
-              </div>
-
-            </fieldset> <!-- form-group -->
-
-          </form>
-
-        </div> <!-- modal body -->
-      </div> <!-- modal content -->
-    </div> <!-- modal dialog -->
-  </div> <!-- modal -->
-
-  <!-- End of Book Now Modal -->
+  
 
 
   <!-- Footer -->
@@ -160,9 +84,7 @@
             <p>Phone: 111-234-5678</p>
             <p>Email: Ekohotel@gmail.com</p>
             <div>
-              <button type="button" class="btn btn-primary pb-2 text-uppercase" data-toggle="modal"
-                data-target="#servicesmodal">Book
-                Now</button>
+              
             </div>
           </div>
 

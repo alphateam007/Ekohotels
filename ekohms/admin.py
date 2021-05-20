@@ -1,9 +1,7 @@
 from ekohms.models import User, Receptionist
 from django.contrib import admin
 from .models import *
-# Register your models here.
-# from django.contrib import admin
-# from .models import User, Receptionist
+
 from django.contrib.auth.admin import UserAdmin
 
 
@@ -18,4 +16,7 @@ class AccountAdmin(UserAdmin):
 
 admin.site.register(User,AccountAdmin)
 admin.site.register(Receptionist)
-# admin.site.register(RoomType)
+admin.site.register(RoomType)
+admin.site.register(Room)
+admin.site.register(RoomStatus)
+

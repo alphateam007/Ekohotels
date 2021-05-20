@@ -88,6 +88,8 @@ DATABASES = {
         'PORT': '5432',
         'NAME': 'ekohotes',
         'PASSWORD': '050895'
+
+
     }
 }
 
